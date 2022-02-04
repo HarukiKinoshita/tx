@@ -1,10 +1,11 @@
 <template>
   <div id="app" class="has-background-light hero is-fullheight py-6">
-    <main class="container">
-      <h1 class="title py-4">つくばエクスプレスはどのくらい速いのか？</h1>
+    <main class="md:mx-2">
+      <h1 class="title mx-2 py-4">つくばエクスプレスは<br class="is-hidden-tablet" />どのくらい速いのか？</h1>
       <LinkedView class="mb-6" />
       <!-- <HeatMaps /> -->
     </main>
+    <p class="has-text-grey-light">Copyright &copy; 2022 Haruki Kinoshita</p>
   </div>
 </template>
 
@@ -22,7 +23,7 @@ export default {
   data: () => {
     return {
     }
-  },
+  }
 }
 </script>
 

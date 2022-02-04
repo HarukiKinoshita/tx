@@ -1,7 +1,7 @@
 <template>
-  <div class="mx-4">
-    <div class="mb-4">
-      <div class="select is-rounded mx-2">
+  <div>
+    <div class="mb-5">
+      <div class="select is-rounded mx-2 mb-1">
         <select
           v-model="selectedLine1"
         >
@@ -10,7 +10,7 @@
           </option>
         </select>
       </div>
-      <div class="select is-rounded mx-2">
+      <div class="select is-rounded mx-2 mb-1">
         <select
           v-model="selectedLine2"
         >
@@ -23,180 +23,72 @@
     </div>
 
     <div class="has-background-white mb-4">
-      <h2 class="py-4">
+      <h2 class="pt-5 pb-2">
         <span class="pb-1 has-text-weight-bold" :style="`border-bottom: 3px solid ${selectedLine1.color}`">{{ selectedLine1.displayName }}</span> vs. <span class="pb-1 has-text-weight-bold" :style="`border-bottom: 3px solid ${selectedLine2.color}`">{{ selectedLine2.displayName }}</span>
       </h2>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
-        <!-- 軸 -->
-        <line x1="0" y1="50" x2="1200" y2="50" stroke="lightgray" stroke-width="0.5"/>
-        <line x1="0" y1="150" x2="1200" y2="150" stroke="lightgray" stroke-width="0.5" />
+      <div class="is-flex is-flex-wrap-nowrap" style="overflow-x: scroll;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" style="min-width: 1024px;">
+          <!-- 軸 -->
+          <line x1="0" :y1="lineOffset" x2="1200" :y2="lineOffset" stroke="lightgray" stroke-width="0.5"/>
+          <line x1="0" :y1="200 - lineOffset" x2="1200" :y2="200 - lineOffset" stroke="lightgray" stroke-width="0.5" />
 
-          <!-- 駅ごとのデータ -->
-          <g v-for="(item, index) in timeDistanceData.filter(el => (selectedLine1.line.includes(el.line) || selectedLine2.line.includes(el.line)) && el.time !== '')" :key="index">
-            <!-- Time line -->
-            <circle
-              :cx="item.time*15 + 30"
-              cy="50"
-              r="2"
-              fill="black"
-            />
-            <!-- Distance line -->
-            <circle
-              :cx="item.distance*15 + 30"
-              cy="150"
-              r="2"
-              fill="black"
-            />
-            <!-- Path -->
-            <line
-              :x1="item.time*15 + 30"
-              y1="50"
-              :x2="item.distance*15 + 30"
-              y2="150"
-              :stroke="findColor(item.line)"
-              stroke-width="1"
-            />
-            <!-- <polygon :points="`30,50 `+(item.time*15 + 30)+`,50 `+(item.distance*15 + 30)+`, 150 30, 150`" fill="red" opacity="0.05" stroke="black" stroke-width="1" /> -->
-            <!-- 所要時間 -->
-            <text
-              :x="item.time*15 + 28"
-              y="40"
-              font-size="10"
-            >
-              {{ item.time }}
-            </text>
-            <!-- 営業キロ -->
-            <text
-              :x="item.distance*15 + 28"
-              y="160"
-              font-size="10"
-              writing-mode="tb"
-            >
-              {{ item.distance }}km
-            </text>
-            <!-- 駅名 -->
-            <text
-              :x="item.distance*15 + 28"
-              y="200"
-              font-size="10"
-              :fill="findColor(item.line)"
-              writing-mode="tb"
-            >
-              {{ item.station }}
-            </text>
-          </g>
-      </svg>
-    </div>
-    
-    <div class="has-background-white mb-4">
-      <h2 class="py-4 has-text-weight-bold"><span class="pb-1" :style="`border-bottom: 3px solid ${selectedLine1.color}`">{{ selectedLine1.displayName }}</span></h2>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" class="has-background-white">
-        <!-- 軸 -->
-        <line x1="0" y1="50" x2="1200" y2="50" stroke="lightgray" stroke-width="0.5"/>
-        <line x1="0" y1="150" x2="1200" y2="150" stroke="lightgray" stroke-width="0.5" />
-
-        <!-- 駅ごとのデータ -->
-        <g v-for="(item, index) in timeDistanceData.filter(el => (selectedLine1.line.includes(el.line)) && el.time !== '')" :key="index">
-          <!-- Time line -->
-          <circle
-            :cx="item.time*15 + 30"
-            cy="50"
-            r="2"
-            fill="black"
-          />
-          <!-- Distance line -->
-          <circle
-            :cx="item.distance*15 + 30"
-            cy="150"
-            r="2"
-            fill="black"
-          />
-          <!-- Path -->
-          <polygon :points="getPoints(item, timeDistanceData.filter(el => (selectedLine1.line.includes(el.line)) && el.time !== '')[index-1], index)" :fill="getHeatMapColors(index)" stroke="black" opacity="0.8" />
-          <!-- 所要時間 -->
-          <text
-            :x="item.time*15 + 28"
-            y="40"
-            font-size="10"
-          >
-            {{ item.time }}
-          </text>
-          <!-- 営業キロ -->
-          <text
-            :x="item.distance*15 + 28"
-            y="160"
-            font-size="10"
-            writing-mode="tb"
-          >
-            {{ item.distance }}km
-          </text>
-          <!-- 駅名 -->
-          <text
-            :x="item.distance*15 + 28"
-            y="200"
-            font-size="10"
-            :fill="findColor(item.line)"
-            writing-mode="tb"
-          >
-            {{ item.station }}
-          </text>
-        </g>
-      </svg>
-    </div>
-
-    <div class="has-background-white mb-4">
-      <h2 class="py-4 has-text-weight-bold"><span class="pb-1" :style="`border-bottom: 3px solid ${selectedLine2.color}`">{{ selectedLine2.displayName }}</span></h2>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
-        <!-- 軸 -->
-        <line x1="0" y1="50" x2="1200" y2="50" stroke="lightgray" stroke-width="0.5"/>
-        <line x1="0" y1="150" x2="1200" y2="150" stroke="lightgray" stroke-width="0.5" />
-
-        <g v-for="(item, index) in timeDistanceData.filter(el => (selectedLine2.line.includes(el.line)) && el.time !== '')" :key="index">
-          <!-- Time line -->
-          <circle
-            :cx="item.time*15 + 30"
-            cy="50"
-            r="2"
-            fill="black"
-          />
-          <!-- Distance line -->
-          <circle
-            :cx="item.distance*15 + 30"
-            cy="150"
-            r="2"
-            fill="black"
-          />
-          <!-- Path -->
-          <polygon :points="getPoints(item, timeDistanceData.filter(el => (selectedLine2.line.includes(el.line)) && el.time !== '')[index-1], index)" :fill="getHeatMapColors(index)" stroke="black" opacity="0.8" />
-          <!-- 所要時間 -->
-          <text
-            :x="item.time*15 + 28"
-            y="40"
-            font-size="10"
-          >
-            {{ item.time }}
-          </text>
-          <!-- 営業キロ -->
-          <text
-            :x="item.distance*15 + 28"
-            y="160"
-            font-size="10"
-            writing-mode="tb"
-          >
-            {{ item.distance }}km
-          </text>
-          <!-- 駅名 -->
-          <text
-            :x="item.distance*15 + 28"
-            y="200"
-            font-size="10"
-            :fill="findColor(item.line)"
-            writing-mode="tb"
-          >
-            {{ item.station }}
-          </text>
-        </g>
-      </svg>
+            <!-- 駅ごとのデータ -->
+            <g v-for="(item, index) in timeDistanceData.filter(el => (selectedLine1.line.includes(el.line) || selectedLine2.line.includes(el.line)) && el.time !== '')" :key="index">
+              <!-- Time line -->
+              <circle
+                :cx="item.time*scale + margin"
+                :cy="lineOffset"
+                r="2"
+                fill="black"
+              />
+              <!-- Distance line -->
+              <circle
+                :cx="item.distance*scale + margin"
+                :cy="200 - lineOffset"
+                r="2"
+                fill="black"
+              />
+              <!-- Path -->
+              <line
+                :x1="item.time*scale + margin"
+                :y1="lineOffset"
+                :x2="item.distance*scale + margin"
+                :y2="200 - lineOffset"
+                :stroke="findColor(item.line)"
+                stroke-width="1"
+              />
+              <!-- <polygon :points="`30,lineOffset `+(item.time*scale + margin)+`,lineOffset `+(item.distance*scale + margin)+`, 200 - lineOffset 30, 200 - lineOffset`" fill="red" opacity="0.05" stroke="black" stroke-width="1" /> -->
+              <!-- 所要時間 -->
+              <text
+                :x="item.time*scale + margin"
+                y="40"
+                font-size="10"
+              >
+                {{ item.time }}
+              </text>
+              <!-- 営業キロ -->
+              <text
+                :x="item.distance*scale + margin"
+                y="160"
+                font-size="10"
+                writing-mode="tb"
+              >
+                {{ item.distance }}km
+              </text>
+              <!-- 駅名 -->
+              <text
+                :x="item.distance*scale + margin"
+                y="200"
+                font-size="10"
+                :fill="findColor(item.line)"
+                writing-mode="tb"
+              >
+                {{ item.station }}
+              </text>
+            </g>
+        </svg>
+      </div>
+      <p class="is-hidden-desktop has-text-grey-light">◀︎ Scroll ▶︎</p>
     </div>
   </div>
 </template>
@@ -217,6 +109,8 @@ import KeiyoCommuterRapid from '../data/keiyo_commuter_rapid.json'
 import OdakyuRapidExpress from '../data/odakyu_rapid_express.json'
 
 export default {
+  components: {
+  },
   data: () => {
     return {
       blankLine: 
@@ -229,7 +123,11 @@ export default {
       selectedLine2: JobanSpecialRapid.metadata,
       metaDataList: [],
       stationMax: 0,
-      timeDistanceData: ''
+      farthestPoint: 0,
+      timeDistanceData: '',
+      scale: 0,
+      margin: 30,
+      lineOffset: 50
     }
   },
   mounted() {
@@ -263,7 +161,9 @@ export default {
       TsukubaGo.metadata,
     ],
     this.stationMax = Math.max(...this.metaDataList.map(el => el.stationSum))
-    console.log(this.stationMax)
+    this.farthestPoint = Math.max(Math.max(...this.timeDistanceData.map(el => el.distance)), Math.max(...this.timeDistanceData.map(el => el.time)))
+    this.scale = (1200 - this.margin*2) / this.farthestPoint
+    console.log("fartherst", this.farthestDistance)
   },
   methods: {
     findColor(lineName) {
@@ -276,21 +176,27 @@ export default {
     getPoints(current, before, index) {
       if (index == 0) {
         let tl = [30, 50]
-        let tr = [current.time * 15 + 30, 50]
-        let br = [current.distance * 15 + 30, 150]
+        let tr = [current.time * 15 + this.margin, 50]
+        let br = [current.distance * 15 + this.margin, 150]
         let bl = [30, 150]
         // console.log(index, tl + ' ' + tr + ' ' + br + ' ' + bl)
         return (tl + ' ' + tr + ' ' + br + ' ' + bl)
       }
       else {
-        let tl = [before.time * 15 + 30, 50]
-        let tr = [current.time * 15 + 30, 50]
-        let br = [current.distance * 15 + 30, 150]
-        let bl = [before.distance * 15 + 30, 150]
+        let tl = [before.time * 15 + this.margin, 50]
+        let tr = [current.time * 15 + this.margin, 50]
+        let br = [current.distance * 15 + this.margin, 150]
+        let bl = [before.distance * 15 + this.margin, 150]
         // console.log(index, tl + ' ' + tr + ' ' + br + ' ' + bl)
         return (tl + ' ' + tr + ' ' + br + ' ' + bl)
       }
     },
-  }
+  },
 }
 </script>
+
+<style scoped>
+.rotate {
+  transform: rotate(90deg);
+}
+</style>
