@@ -1,56 +1,64 @@
-[
-  {
+{
+  "metadata": {
     "line": "KyotoShinkaisoku",
-    "station": "大阪",
-    "time": 0,
-    "distance": 0
+    "displayName": "京都線 新快速",
+    "color": "#0072BC",
+    "stationSum": 9
   },
-  {
-    "line": "KyotoShinkaisoku",
-    "station": "新大阪",
-    "time": 5,
-    "distance": 3.8
-  },
-  {
-    "line": "KyotoShinkaisoku",
-    "station": "高槻",
-    "time": 16,
-    "distance": 21.1
-  },
-  {
-    "line": "KyotoShinkaisoku",
-    "station": "京都",
-    "time": 31,
-    "distance": 42.8
-  },
-  {
-    "line": "KyotoShinkaisoku",
-    "station": "山科",
-    "time": 36,
-    "distance": 48.3
-  },
-  {
-    "line": "KyotoShinkaisoku",
-    "station": "大津",
-    "time": 41,
-    "distance": 52.8
-  },
-  {
-    "line": "KyotoShinkaisoku",
-    "station": "石山",
-    "time": 45,
-    "distance": 57.3
-  },
-  {
-    "line": "KyotoShinkaisoku",
-    "station": "南草津",
-    "time": 49,
-    "distance": 62.5
-  },
-  {
-    "line": "KyotoShinkaisoku",
-    "station": "草津",
-    "time": 53,
-    "distance": 65
-  }
-]
+  "data": [
+    {
+      "line": "KyotoShinkaisoku",
+      "station": "大阪",
+      "time": 0,
+      "distance": 0
+    },
+    {
+      "line": "KyotoShinkaisoku",
+      "station": "新大阪",
+      "time": 5,
+      "distance": 3.8
+    },
+    {
+      "line": "KyotoShinkaisoku",
+      "station": "高槻",
+      "time": 16,
+      "distance": 21.1
+    },
+    {
+      "line": "KyotoShinkaisoku",
+      "station": "京都",
+      "time": 31,
+      "distance": 42.8
+    },
+    {
+      "line": "KyotoShinkaisoku",
+      "station": "山科",
+      "time": 36,
+      "distance": 48.3
+    },
+    {
+      "line": "KyotoShinkaisoku",
+      "station": "大津",
+      "time": 41,
+      "distance": 52.8
+    },
+    {
+      "line": "KyotoShinkaisoku",
+      "station": "石山",
+      "time": 45,
+      "distance": 57.3
+    },
+    {
+      "line": "KyotoShinkaisoku",
+      "station": "南草津",
+      "time": 49,
+      "distance": 62.5
+    },
+    {
+      "line": "KyotoShinkaisoku",
+      "station": "草津",
+      "time": 53,
+      "distance": 65
+    }
+  ]
+}

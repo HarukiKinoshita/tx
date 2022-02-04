@@ -1,67 +1,42 @@
 <template>
-  <v-app :style="{ background: $vuetify.theme.themes.light.background }">
-    <!-- <LinkedView :time-distance-object="TsukubaExpress" /> -->
-    <v-container>
+  <div id="app" class="has-background-light hero is-fullheight py-6">
+    <main class="container">
       <h1 class="title py-4">つくばエクスプレスはどのくらい速いのか？</h1>
-      <LinkedView :display-list="displayList" class="white" />
-      <v-row>
-        <template v-for="(item, index) in dataList">
-          <v-col class="p-1" :key="index" cols="6" sm="3">
-            <v-checkbox :id="item.line" :value="item" v-model="displayList" :label="item.displayName" :color="item.color"></v-checkbox>
-          </v-col>
-        </template>
-      </v-row>
-    </v-container>
-    <!-- {{ dataList }}
-    <br>
-    {{ displayList }} -->
-  </v-app>
+      <LinkedView class="mb-6" />
+      <!-- <HeatMaps /> -->
+    </main>
+  </div>
 </template>
 
 <script>
+import 'bulma/css/bulma.css'; 
 import LinkedView from './components/LinkedView.vue'
+// import HeatMaps from './components/HeatMaps.vue'
 
 export default {
   name: 'App',
   components: {
-    LinkedView
+    LinkedView, 
+    // HeatMaps
   },
   data: () => {
     return {
-      displayList: [],
-      dataList: [
-        {
-          line: "TsukubaExpress", 
-          displayName: "TX 快速",
-          color: "#ff0000"
-        },
-        {
-          line: "Joban",
-          displayName: "常磐線 特別快速",
-          color: "#0067c0"
-        },
-        {
-          line: "Chuo",
-          displayName: "中央線 中央特快",
-          color: "#F15A22"
-        },
-        {
-          line: "KyotoShinkaisoku",
-          displayName: "京都線 新快速",
-          color: "#0072BC"
-        }
-      ]
     }
   },
-  mounted() {
-    this.displayList = this.dataList
-  }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 
+    -apple-system, BlinkMacSystemFont, 
+    "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    Meiryo,
+    sans-serif !important;
+  font-feature-settings: "palt";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

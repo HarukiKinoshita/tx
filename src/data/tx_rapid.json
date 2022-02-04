@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "line": "TXRapid", 
+    "displayName": "TX 快速",
+    "color": "#ff0000",
+    "stationSum": 9
+  },
+  "data": [
+    {
+      "line": "TXRapid",
+      "station": "秋葉原",
+      "time": 0,
+      "distance": 0
+    },
+    {
+      "line": "TXRapid",
+      "station": "新御徒町",
+      "time": 2,
+      "distance": 1.6
+    },
+    {
+      "line": "TXRapid",
+      "station": "浅草",
+      "time": 4,
+      "distance": 3.1
+    },
+    {
+      "line": "TXRapid",
+      "station": "南千住",
+      "time": 7,
+      "distance": 5.6
+    },
+    {
+      "line": "TXRapid",
+      "station": "北千住",
+      "time": 10,
+      "distance": 7.5
+    },
+    {
+      "line": "TXRapid",
+      "station": "南流山",
+      "time": 20,
+      "distance": 22.1
+    },
+    {
+      "line": "TXRapid",
+      "station": "流山おおたかの森",
+      "time": 25,
+      "distance": 26.5
+    },
+    {
+      "line": "TXRapid",
+      "station": "守谷",
+      "time": 32,
+      "distance": 37.7
+    },
+    {
+      "line": "TXRapid",
+      "station": "つくば",
+      "time": 45,
+      "distance": 58.3
+    }
+  ]
+}

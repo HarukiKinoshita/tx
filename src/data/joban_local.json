@@ -1,0 +1,106 @@
+ {
+   "metadata": {
+    "line": "JobanLocal",
+    "displayName": "常磐線 普通",
+    "color": "#3333FF",
+    "stationSum": 16
+  },
+  "data": [
+    {
+      "line": "JobanLocal",
+      "station": "上野",
+      "time": 0,
+      "distance": 0
+    },
+    {
+      "line": "JobanLocal",
+      "station": "日暮里",
+      "time": 3,
+      "distance": 2.2
+    },
+    {
+      "line": "JobanLocal",
+      "station": "三河島",
+      "time": 5,
+      "distance": 3.4
+    },
+    {
+      "line": "JobanLocal",
+      "station": "南千住",
+      "time": 8,
+      "distance": 5.6
+    },
+    {
+      "line": "JobanLocal",
+      "station": "北千住",
+      "time": 11,
+      "distance": 7.4
+    },
+    {
+      "line": "JobanLocal",
+      "station": "松戸",
+      "time": 20,
+      "distance": 12.9
+    },
+    {
+      "line": "JobanLocal",
+      "station": "柏",
+      "time": 29,
+      "distance": 29.1
+    },
+    {
+      "line": "JobanLocal",
+      "station": "我孫子",
+      "time": 33,
+      "distance": 33.5
+    },
+    {
+      "line": "JobanLocal",
+      "station": "天王台",
+      "time": 35,
+      "distance": 36.2
+    },
+    {
+      "line": "JobanLocal",
+      "station": "取手",
+      "time": 41,
+      "distance": 39.6
+    },
+    {
+      "line": "JobanLocal",
+      "station": "藤代",
+      "time": 46,
+      "distance": 45.6
+    },
+    {
+      "line": "JobanLocal",
+      "station": "佐貫",
+      "time": 49,
+      "distance": 47.7
+    },
+    {
+      "line": "JobanLocal",
+      "station": "牛久",
+      "time": 53,
+      "distance": 52.8
+    },
+    {
+      "line": "JobanLocal",
+      "station": "ひたち野うしく",
+      "time": 57,
+      "distance": 56.7
+    },
+    {
+      "line": "JobanLocal",
+      "station": "荒川沖",
+      "time": 60,
+      "distance": 59
+    },
+    {
+      "line": "JobanLocal",
+      "station": "土浦",
+      "time": 65,
+      "distance": 66
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+ {
+   "metadata": {
+    "line": "JobanSpecialRapid",
+    "displayName": "常磐線 特別快速",
+    "color": "#91278F",
+    "stationSum": 12
+  },
+  "data": [
+    {
+      "line": "JobanSpecialRapid",
+      "station": "上野",
+      "time": 0,
+      "distance": 0
+    },
+    {
+      "line": "JobanSpecialRapid",
+      "station": "日暮里",
+      "time": 3,
+      "distance": 2.2
+    },
+    {
+      "line": "JobanSpecialRapid",
+      "station": "北千住",
+      "time": 11,
+      "distance": 7.4
+    },
+    {
+      "line": "JobanSpecialRapid",
+      "station": "松戸",
+      "time": 19,
+      "distance": 12.9
+    },
+    {
+      "line": "JobanSpecialRapid",
+      "station": "柏",
+      "time": 27,
+      "distance": 29.1
+    },
+    {
+      "line": "JobanSpecialRapid",
+      "station": "取手",
+      "time": 35,
+      "distance": 39.6
+    },
+    {
+      "line": "JobanSpecialRapid",
+      "station": "藤代",
+      "time": 40,
+      "distance": 45.6
+    },
+    {
+      "line": "JobanSpecialRapid",
+      "station": "佐貫",
+      "time": 43,
+      "distance": 47.7
+    },
+    {
+      "line": "JobanSpecialRapid",
+      "station": "牛久",
+      "time": 47,
+      "distance": 52.8
+    },
+    {
+      "line": "JobanSpecialRapid",
+      "station": "ひたち野うしく",
+      "time": 51,
+      "distance": 56.7
+    },
+    {
+      "line": "JobanSpecialRapid",
+      "station": "荒川沖",
+      "time": 54,
+      "distance": 59
+    },
+    {
+      "line": "JobanSpecialRapid",
+      "station": "土浦",
+      "time": 59,
+      "distance": 66
+    }
+  ]
+}

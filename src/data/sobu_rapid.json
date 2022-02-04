@@ -1,0 +1,82 @@
+{
+  "metadata": {
+    "line": "SobuRapid",
+    "displayName": "総武快速線 (内房線直通)",
+    "color": "#0067C0",
+    "stationSum": 12
+  },
+  "data": [
+    {
+      "line": "SobuRapid",
+      "station": "東京",
+      "time": 0,
+      "distance": 0
+    },
+    {
+      "line": "SobuRapid",
+      "station": "新日本橋",
+      "time": 2,
+      "distance": 1.2
+    },
+    {
+      "line": "SobuRapid",
+      "station": "馬喰町",
+      "time": 4,
+      "distance": 2.3
+    },
+    {
+      "line": "SobuRapid",
+      "station": "錦糸町",
+      "time": 8,
+      "distance": 4.8
+    },
+    {
+      "line": "SobuRapid",
+      "station": "新小岩",
+      "time": 13,
+      "distance": 10
+    },
+    {
+      "line": "SobuRapid",
+      "station": "市川",
+      "time": 19,
+      "distance": 12.8
+    },
+    {
+      "line": "SobuRapid",
+      "station": "船橋",
+      "time": 26,
+      "distance": 23.2
+    },
+    {
+      "line": "SobuRapid",
+      "station": "津田沼",
+      "time": 30,
+      "distance": 26.7
+    },
+    {
+      "line": "SobuRapid",
+      "station": "稲毛",
+      "time": 37,
+      "distance": 35.9
+    },
+    {
+      "line": "SobuRapid",
+      "station": "千葉",
+      "time": 41,
+      "distance": 39.2
+    },
+    {
+      "line": "SobuRapid",
+      "station": "本千葉",
+      "time": 44,
+      "distance": 40.6
+    },
+    {
+      "line": "SobuRapid",
+      "station": "蘇我",
+      "time": 47,
+      "distance": 43
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "metadata": {
+    "line": "OdakyuRapidExpress",
+    "displayName": "小田急江ノ島線 快速急行",
+    "color": "#2288CC",
+    "stationSum": 11
+  },
+  "data": [
+    {
+      "line": "OdakyuRapidExpress",
+      "station": "新宿",
+      "time": 0,
+      "distance": 0
+    },
+    {
+      "line": "OdakyuRapidExpress",
+      "station": "代々木上原",
+      "time": 5,
+      "distance": 3.5
+    },
+    {
+      "line": "OdakyuRapidExpress",
+      "station": "下北沢",
+      "time": 8,
+      "distance": 4.9
+    },
+    {
+      "line": "OdakyuRapidExpress",
+      "station": "登戸",
+      "time": 17,
+      "distance": 15.2
+    },
+    {
+      "line": "OdakyuRapidExpress",
+      "station": "新百合ヶ丘",
+      "time": 26,
+      "distance": 21.5
+    },
+    {
+      "line": "OdakyuRapidExpress",
+      "station": "町田",
+      "time": 37,
+      "distance": 30.8
+    },
+    {
+      "line": "OdakyuRapidExpress",
+      "station": "相模大野",
+      "time": 41,
+      "distance": 32.3
+    },
+    {
+      "line": "OdakyuRapidExpress",
+      "station": "中央林間",
+      "time": 45,
+      "distance": 35.3
+    },
+    {
+      "line": "OdakyuRapidExpress",
+      "station": "大和",
+      "time": 49,
+      "distance": 39.9
+    },
+    {
+      "line": "OdakyuRapidExpress",
+      "station": "湘南台",
+      "time": 56,
+      "distance": 48.1
+    },
+    {
+      "line": "OdakyuRapidExpress",
+      "station": "藤沢",
+      "time": 59,
+      "distance": 55.4
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "metadata": {
+    "line": "TXLocal",
+    "displayName": "TX 普通",
+    "color": "#808080",
+    "stationSum": 20
+  },
+  "data": [
+    {
+      "line": "TXLocal",
+      "station": "秋葉原",
+      "time": 0,
+      "distance": 0
+    },
+    {
+      "line": "TXLocal",
+      "station": "新御徒町",
+      "time": 2,
+      "distance": 1.6
+    },
+    {
+      "line": "TXLocal",
+      "station": "浅草",
+      "time": 4,
+      "distance": 3.1
+    },
+    {
+      "line": "TXLocal",
+      "station": "南千住",
+      "time": 7,
+      "distance": 5.6
+    },
+    {
+      "line": "TXLocal",
+      "station": "北千住",
+      "time": 10,
+      "distance": 7.5
+    },
+    {
+      "line": "TXLocal",
+      "station": "青井",
+      "time": 13,
+      "distance": 10.6
+    },
+    {
+      "line": "TXLocal",
+      "station": "六町",
+      "time": 15,
+      "distance": 12
+    },
+    {
+      "line": "TXLocal",
+      "station": "八潮",
+      "time": 19,
+      "distance": 15.6
+    },
+    {
+      "line": "TXLocal",
+      "station": "三郷中央",
+      "time": 22,
+      "distance": 19.3
+    },
+    {
+      "line": "TXLocal",
+      "station": "南流山",
+      "time": 25,
+      "distance": 22.1
+    },
+    {
+      "line": "TXLocal",
+      "station": "流山セントラルパーク",
+      "time": 28,
+      "distance": 24.3
+    },
+    {
+      "line": "TXLocal",
+      "station": "流山おおたかの森",
+      "time": 30,
+      "distance": 26.5
+    },
+    {
+      "line": "TXLocal",
+      "station": "柏の葉キャンパス",
+      "time": 33,
+      "distance": 30
+    },
+    {
+      "line": "TXLocal",
+      "station": "柏たなか",
+      "time": 36,
+      "distance": 32
+    },
+    {
+      "line": "TXLocal",
+      "station": "守谷",
+      "time": 40,
+      "distance": 37.7
+    },
+    {
+      "line": "TXLocal",
+      "station": "みらい平",
+      "time": 45,
+      "distance": 44.3
+    },
+    {
+      "line": "TXLocal",
+      "station": "みどりの",
+      "time": 48,
+      "distance": 48.6
+    },
+    {
+      "line": "TXLocal",
+      "station": "万博記念公園",
+      "time": 51,
+      "distance": 51.8
+    },
+    {
+      "line": "TXLocal",
+      "station": "研究学園",
+      "time": 54,
+      "distance": 55.6
+    },
+    {
+      "line": "TXLocal",
+      "station": "つくば",
+      "time": 57,
+      "distance": 58.3
+    }
+  ]
+}

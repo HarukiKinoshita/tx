@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "line": "TokaidoSpecialRapid",
+    "displayName": "東海道本線 特別快速",
+    "color": "#F47921",
+    "stationSum": 7
+  },
+  "data": [
+    {
+      "line": "TokaidoSpecialRapid",
+      "station": "名古屋",
+      "time": 0,
+      "distance": 0
+    },
+    {
+      "line": "TokaidoSpecialRapid",
+      "station": "金山",
+      "time": 4,
+      "distance": 3.3
+    },
+    {
+      "line": "TokaidoSpecialRapid",
+      "station": "刈谷",
+      "time": 20,
+      "distance": 24.4
+    },
+    {
+      "line": "TokaidoSpecialRapid",
+      "station": "安城",
+      "time": 26,
+      "distance": 30.4
+    },
+    {
+      "line": "TokaidoSpecialRapid",
+      "station": "岡崎",
+      "time": 31,
+      "distance": 40.1
+    },
+    {
+      "line": "TokaidoSpecialRapid",
+      "station": "蒲郡",
+      "time": 41,
+      "distance": 55.4
+    },
+    {
+      "line": "TokaidoSpecialRapid",
+      "station": "豊橋",
+      "time": 53,
+      "distance": 72.4
+    }
+  ]
+}

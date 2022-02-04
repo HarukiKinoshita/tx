@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "line": "KeiyoCommuterRapid",
+    "displayName": "京葉線 通勤快速",
+    "color": "#C9252F",
+    "stationSum": 4
+  },
+  "data": [
+    {
+      "line": "KeiyoCommuterRapid",
+      "station": "東京",
+      "time": 0,
+      "distance": 0
+    },
+    {
+      "line": "KeiyoCommuterRapid",
+      "station": "八丁堀",
+      "time": 2,
+      "distance": 1.2
+    },
+    {
+      "line": "KeiyoCommuterRapid",
+      "station": "新木場",
+      "time": 8,
+      "distance": 7.4
+    },
+    {
+      "line": "KeiyoCommuterRapid",
+      "station": "蘇我",
+      "time": 35,
+      "distance": 43
+    }
+  ]
+}

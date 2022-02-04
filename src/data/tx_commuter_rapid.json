@@ -1,0 +1,106 @@
+{
+  "metadata": {
+    "line": "TXCommuterRapid",
+    "displayName": "TX 通勤快速",
+    "color": "#FFA500",
+    "stationSum": 16
+  },
+  "data": [
+    {
+      "line": "TXCommuterRapid",
+      "station": "秋葉原",
+      "time": 0,
+      "distance": 0
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "新御徒町",
+      "time": 2,
+      "distance": 1.6
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "浅草",
+      "time": 4,
+      "distance": 3.1
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "南千住",
+      "time": 7,
+      "distance": 5.6
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "北千住",
+      "time": 10,
+      "distance": 7.5
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "八潮",
+      "time": 17,
+      "distance": 15.6
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "三郷中央",
+      "time": 20,
+      "distance": 19.3
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "南流山",
+      "time": 23,
+      "distance": 22.1
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "流山おおたかの森",
+      "time": 26,
+      "distance": 26.5
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "柏の葉キャンパス",
+      "time": 30,
+      "distance": 30
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "守谷",
+      "time": 35,
+      "distance": 37.7
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "みらい平",
+      "time": 40,
+      "distance": 44.3
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "みどりの",
+      "time": 43,
+      "distance": 48.6
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "万博記念公園",
+      "time": 46,
+      "distance": 51.8
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "研究学園",
+      "time": 49,
+      "distance": 55.6
+    },
+    {
+      "line": "TXCommuterRapid",
+      "station": "つくば",
+      "time": 52,
+      "distance": 58.3
+    }
+  ]
+}

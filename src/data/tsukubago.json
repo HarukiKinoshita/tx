@@ -1,0 +1,34 @@
+{
+  "metadata": {
+    "line": "TsukubaGo",
+    "displayName": "高速バス つくば号",
+    "color": "#0178EF",
+    "stationSum": 4
+  },
+  "data": [
+    {
+      "line": "TsukubaGo",
+      "station": "東京",
+      "time": 0,
+      "distance": 0
+    },
+    {
+      "line": "TsukubaGo",
+      "station": "下広岡",
+      "time": 56,
+      "distance": 62.5
+    },
+    {
+      "line": "TsukubaGo",
+      "station": "つくばセンター",
+      "time": 65,
+      "distance": 68
+    },
+    {
+      "line": "TsukubaGo",
+      "station": "筑波大学",
+      "time": 75,
+      "distance": 72.6
+    }
+  ]
+}
