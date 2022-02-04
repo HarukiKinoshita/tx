@@ -1,6 +1,6 @@
 <template>
   <div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" style="border: 1px solid black;">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300">
       <!-- 軸 -->
       <line x1="0" y1="50" x2="1200" y2="50" stroke="lightgray" stroke-width="0.5"/>
       <line x1="0" y1="150" x2="1200" y2="150" stroke="lightgray" stroke-width="0.5" />
