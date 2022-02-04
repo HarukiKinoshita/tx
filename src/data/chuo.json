@@ -1,0 +1,86 @@
+[
+  {
+    "line": "Chuo",
+    "station": "東京",
+    "time": 0,
+    "distance": 0
+  },
+  {
+    "line": "Chuo",
+    "station": "神田",
+    "time": 2,
+    "distance": 1.3
+  },
+  {
+    "line": "Chuo",
+    "station": "お茶の水",
+    "time": 4,
+    "distance": 2.6
+  },
+  {
+    "line": "Chuo",
+    "station": "四ツ谷",
+    "time": 9,
+    "distance": 6.6
+  },
+  {
+    "line": "Chuo",
+    "station": "新宿",
+    "time": 14,
+    "distance": 10.3
+  },
+  {
+    "line": "Chuo",
+    "station": "中野",
+    "time": 19,
+    "distance": 14.7
+  },
+  {
+    "line": "Chuo",
+    "station": "三鷹",
+    "time": 28,
+    "distance": 24.1
+  },
+  {
+    "line": "Chuo",
+    "station": "国分寺",
+    "time": 35,
+    "distance": 31.4
+  },
+  {
+    "line": "Chuo",
+    "station": "立川",
+    "time": 41,
+    "distance": 37.5
+  },
+  {
+    "line": "Chuo",
+    "station": "日野",
+    "time": 44,
+    "distance": 40.8
+  },
+  {
+    "line": "Chuo",
+    "station": "豊田",
+    "time": 47,
+    "distance": 43.1
+  },
+  {
+    "line": "Chuo",
+    "station": "八王子",
+    "time": 52,
+    "distance": 47.4
+  },
+  {
+    "line": "Chuo",
+    "station": "西八王子",
+    "time": 55,
+    "distance": 49.8
+  },
+  {
+    "line": "Chuo",
+    "station": "高尾",
+    "time": 60,
+    "distance": 53.1
+  }
+]

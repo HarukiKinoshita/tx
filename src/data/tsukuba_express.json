@@ -1,0 +1,122 @@
+[
+  {
+    "line": "TsukubaExpress",
+    "station": "秋葉原",
+    "time": 0,
+    "distance": 0
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "新御徒町",
+    "time": 2,
+    "distance": 1.6
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "浅草",
+    "time": 4,
+    "distance": 3.1
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "南千住",
+    "time": 7,
+    "distance": 5.6
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "北千住",
+    "time": 10,
+    "distance": 7.5
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "青井",
+    "time": "",
+    "distance": 10.6
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "六町",
+    "time": "",
+    "distance": 12
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "八潮",
+    "time": "",
+    "distance": 15.6
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "三郷中央",
+    "time": "",
+    "distance": 19.3
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "南流山",
+    "time": 20,
+    "distance": 22.1
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "流山セントラルパーク",
+    "time": "",
+    "distance": 24.3
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "流山おおたかの森",
+    "time": 25,
+    "distance": 26.5
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "柏の葉キャンパス",
+    "time": "",
+    "distance": 30
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "柏たなか",
+    "time": "",
+    "distance": 32
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "守谷",
+    "time": 32,
+    "distance": 37.7
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "みらい平",
+    "time": "",
+    "distance": 44.3
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "みどりの",
+    "time": "",
+    "distance": 48.6
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "万博記念公園",
+    "time": "",
+    "distance": 51.8
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "研究学園",
+    "time": "",
+    "distance": 55.6
+  },
+  {
+    "line": "TsukubaExpress",
+    "station": "つくば",
+    "time": 45,
+    "distance": 58.3
+  }
+]
