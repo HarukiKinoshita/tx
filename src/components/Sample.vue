@@ -16,8 +16,8 @@
                 fill="black"
               />
               <circle
-                :cx="24*scale + margin"
-                :cy="lineOffset"
+                :cx="7*scale + margin"
+                :cy="200 - lineOffset"
                 r="2"
                 fill="black"
               />
@@ -30,9 +30,9 @@
               />
               <!-- Path -->
               <line
-                :x1="24*scale + margin"
+                :x1="10*scale + margin"
                 :y1="lineOffset"
-                :x2="20*scale + margin"
+                :x2="7*scale + margin"
                 :y2="200 - lineOffset"
                 :stroke="findColor('JobanSpecialRapid')"
                 stroke-width="1"
@@ -55,11 +55,12 @@
                 10
               </text>
               <text
-                :x="24*scale + margin"
-                y="40"
+                :x="7*scale + margin"
+                y="160"
                 font-size="10"
+                writing-mode="tb"
               >
-                24
+                7km
               </text>
               <!-- 営業キロ -->
               <text
@@ -72,13 +73,22 @@
               </text>
               <!-- 駅名 -->
               <text
+                :x="7*scale + margin"
+                y="200"
+                font-size="10"
+                :fill="findColor('JobanSpecialRapid')"
+                writing-mode="tb"
+              >
+                Ａ駅
+              </text>
+              <text
                 :x="20*scale + margin"
                 y="200"
                 font-size="10"
                 :fill="findColor('TXRapid')"
                 writing-mode="tb"
               >
-                A駅
+                Ｂ駅
               </text>
         </svg>
       
