@@ -11,10 +11,10 @@
     
     <div id="howto-modal" class="box" v-show="isShowModal">
       <p class="title is-4">図の見方</p>
-      <p class="has-text-left is-size-7 mb-4">このコンテンツでは、電車がある駅まで移動するのにかかる時間と距離を、<strong>時間軸</strong>(上の横線)と<strong>距離の軸</strong>(下の横線)を結ぶ線を使って表現しています。</p>
+      <p class="has-text-left is-size-7 mb-4">このコンテンツでは、ある駅まで電車が移動するのにかかる時間と距離を、<strong>時間軸</strong>(上の横線)と<strong>距離の軸</strong>(下の横線)を結ぶ線を使って表現しています。</p>
       <img class="mb-4 px-6" src="@/assets/howto.png"><br>
-      <p class="has-text-left is-size-7">紫色の線を見てください。この電車は、始発駅を出発してから10分で<strong>7km</strong>走行し、A駅に到着しています。一方で、赤色の線で表される電車は、同じ時間で<strong>20km</strong>も進んでいます。つまり、この時点では<strong>紫色の電車の方が赤色の電車よりも遠くまで到達している</strong>ということがわかります。<br><br>
-      このように、線が左右どちらにどの程度傾いているかを比べることで、2つの電車のスピードを比較することができます。</p>
+      <p class="has-text-left is-size-7">紫色の線を見てください。この電車は、始発駅を出発してから10分で<strong>7km</strong>走行し、A駅に到着しています。一方で、赤色の線で表される電車は、同じ時間で<strong>20km</strong>も進んでいます。つまり、この時点では<strong>赤色の電車の方が紫色の電車よりも遠くまで到達している</strong>ということがわかります。<br><br>
+      このように、線が左右どちらにどの程度傾いているかを比べることで、2つの電車の到達時間・到達距離を比較することができます。</p>
       <button class="button is-success is-rounded mt-3" @click="isShowModal = false">コンテンツを見る</button>
     </div>
     <!-- <Sample /> -->
@@ -67,7 +67,7 @@ export default {
   left: 0;
   right: 0;
   width: 80vw;
-  max-width: 640px;
+  max-width: 480px;
   margin-left: auto; 
   margin-right: auto;
   z-index: 20
