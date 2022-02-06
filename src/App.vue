@@ -1,11 +1,17 @@
 <template>
   <div id="app" class="has-background-light hero is-fullheight py-6">
     <main class="md:mx-2" :style="isShowModal ? 'filter: blur(3px)' : 'filter: blur(0)'">
-      <h1 class="title mx-2 py-4">つくばエクスプレスは<br class="is-hidden-tablet" />どのくらい速いのか？</h1>
-      <LinkedView class="mb-6" />
+      <h1 class="title mx-2 my-5">つくばエクスプレスは<br class="is-hidden-tablet" />どのくらい{{ this.mode=='distance' ? "速い" : "高い" }}のか？</h1>
+      <LinkedView v-if="mode=='distance'" class="mb-5" />
+      <LinkedViewFare v-if="mode=='fare'" class="mb-5" />
       <!-- <HeatMaps /> -->
+
       <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-size="large" data-text="つくばエクスプレスはどのくらい速いのか？" data-url="https://harukikinoshita.github.io/tx/" data-show-count="false">Tweet</a>
-      <button class="ml-2 button is-small is-rounded" @click="isShowModal = !isShowModal">解説を開く</button>
+      <button class="ml-2 mb-4 button is-small is-rounded" @click="isShowModal = !isShowModal">解説を開く</button>
+      <div class="mb-1">
+        <a v-if="mode == 'fare'" @click="mode = 'distance'">「つくばエクスプレスはどのくらい速いのか？」を見る</a>
+        <a v-if="mode == 'distance'" @click="mode = 'fare'">「つくばエクスプレスはどのくらい高いのか？」を見る</a>
+      </div>
     </main>
     <p class="has-text-grey-light">Copyright &copy; 2022 Haruki Kinoshita</p>
     
@@ -24,19 +30,21 @@
 <script>
 import 'bulma/css/bulma.css'; 
 import LinkedView from './components/LinkedView.vue'
+import LinkedViewFare from './components/LinkedViewFare.vue'
 // import Sample from './components/Sample.vue'
 // import HeatMaps from './components/HeatMaps.vue'
 
 export default {
   name: 'App',
   components: {
-    LinkedView, 
+    LinkedView, LinkedViewFare
     // Sample
     // HeatMaps
   },
   data: () => {
     return {
-      isShowModal: true
+      isShowModal: true,
+      mode: 'distance'
     }
   },
   created() {

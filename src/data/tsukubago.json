@@ -10,25 +10,29 @@
       "line": "TsukubaGo",
       "station": "東京",
       "time": 0,
-      "distance": 0
+      "distance": 0,
+      "fare": 1150
     },
     {
       "line": "TsukubaGo",
       "station": "下広岡",
       "time": 56,
-      "distance": 62.5
+      "distance": 62.5,
+      "fare": 1150
     },
     {
       "line": "TsukubaGo",
       "station": "つくばセンター",
       "time": 65,
-      "distance": 68
+      "distance": 68,
+      "fare": 1150
     },
     {
       "line": "TsukubaGo",
       "station": "筑波大学",
       "time": 75,
-      "distance": 72.6
+      "distance": 72.6,
+      "fare": 1150
     }
   ]
 }

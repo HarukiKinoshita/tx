@@ -10,73 +10,85 @@
       "line": "JobanSpecialRapid",
       "station": "上野",
       "time": 0,
-      "distance": 0
+      "distance": 0,
+      "fare": 0
     },
     {
       "line": "JobanSpecialRapid",
       "station": "日暮里",
       "time": 3,
-      "distance": 2.2
+      "distance": 2.2,
+      "fare": 140
     },
     {
       "line": "JobanSpecialRapid",
       "station": "北千住",
       "time": 11,
-      "distance": 7.4
+      "distance": 7.4,
+      "fare": 170
     },
     {
       "line": "JobanSpecialRapid",
       "station": "松戸",
       "time": 19,
-      "distance": 12.9
+      "distance": 12.9,
+      "fare": 310
     },
     {
       "line": "JobanSpecialRapid",
       "station": "柏",
       "time": 27,
-      "distance": 29.1
+      "distance": 29.1,
+      "fare": 480
     },
     {
       "line": "JobanSpecialRapid",
       "station": "取手",
       "time": 35,
-      "distance": 39.6
+      "distance": 39.6,
+      "fare": 650
     },
     {
       "line": "JobanSpecialRapid",
       "station": "藤代",
       "time": 40,
-      "distance": 45.6
+      "distance": 45.6,
+      "fare": 860
     },
     {
       "line": "JobanSpecialRapid",
       "station": "佐貫",
       "time": 43,
-      "distance": 47.7
+      "distance": 47.7,
+      "fare": 860
     },
     {
       "line": "JobanSpecialRapid",
       "station": "牛久",
       "time": 47,
-      "distance": 52.8
+      "distance": 52.8,
+      "fare": 990
     },
     {
       "line": "JobanSpecialRapid",
       "station": "ひたち野うしく",
       "time": 51,
-      "distance": 56.7
+      "distance": 56.7,
+      "fare": 990
     },
     {
       "line": "JobanSpecialRapid",
       "station": "荒川沖",
       "time": 54,
-      "distance": 59
+      "distance": 59,
+      "fare": 990
     },
     {
       "line": "JobanSpecialRapid",
       "station": "土浦",
       "time": 59,
-      "distance": 66
+      "distance": 66,
+      "fare": 1170
     }
   ]
 }

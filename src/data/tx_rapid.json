@@ -10,55 +10,64 @@
       "line": "TXRapid",
       "station": "秋葉原",
       "time": 0,
-      "distance": 0
+      "distance": 0,
+      "fare": 0
     },
     {
       "line": "TXRapid",
       "station": "新御徒町",
       "time": 2,
-      "distance": 1.6
+      "distance": 1.6,
+      "fare": 168
     },
     {
       "line": "TXRapid",
       "station": "浅草",
       "time": 4,
-      "distance": 3.1
+      "distance": 3.1,
+      "fare": 210
     },
     {
       "line": "TXRapid",
       "station": "南千住",
       "time": 7,
-      "distance": 5.6
+      "distance": 5.6,
+      "fare": 251
     },
     {
       "line": "TXRapid",
       "station": "北千住",
       "time": 10,
-      "distance": 7.5
+      "distance": 7.5,
+      "fare": 293
     },
     {
       "line": "TXRapid",
       "station": "南流山",
       "time": 20,
-      "distance": 22.1
+      "distance": 22.1,
+      "fare": 576
     },
     {
       "line": "TXRapid",
       "station": "流山おおたかの森",
       "time": 25,
-      "distance": 26.5
+      "distance": 26.5,
+      "fare": 629
     },
     {
       "line": "TXRapid",
       "station": "守谷",
       "time": 32,
-      "distance": 37.7
+      "distance": 37.7,
+      "fare": 838
     },
     {
       "line": "TXRapid",
       "station": "つくば",
       "time": 45,
-      "distance": 58.3
+      "distance": 58.3,
+      "fare": 1205
     }
   ]
 }

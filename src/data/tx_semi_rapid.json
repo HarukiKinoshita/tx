@@ -10,79 +10,92 @@
       "line": "TXSemiRapid",
       "station": "秋葉原",
       "time": 0,
-      "distance": 0
+      "distance": 0,
+      "fare": 0
     },
     {
       "line": "TXSemiRapid",
       "station": "新御徒町",
       "time": 2,
-      "distance": 1.6
+      "distance": 1.6,
+      "fare": 168
     },
     {
       "line": "TXSemiRapid",
       "station": "浅草",
       "time": 4,
-      "distance": 3.1
+      "distance": 3.1,
+      "fare": 210
     },
     {
       "line": "TXSemiRapid",
       "station": "南千住",
       "time": 7,
-      "distance": 5.6
+      "distance": 5.6,
+      "fare": 251
     },
     {
       "line": "TXSemiRapid",
       "station": "北千住",
       "time": 10,
-      "distance": 7.5
+      "distance": 7.5,
+      "fare": 293
     },
     {
       "line": "TXSemiRapid",
       "station": "六町",
       "time": 14,
-      "distance": 12
+      "distance": 12,
+      "fare": 377
     },
     {
       "line": "TXSemiRapid",
       "station": "八潮",
       "time": 18,
-      "distance": 15.6
+      "distance": 15.6,
+      "fare": 471
     },
     {
       "line": "TXSemiRapid",
       "station": "南流山",
       "time": 23,
-      "distance": 22.1
+      "distance": 22.1,
+      "fare": 576
     },
     {
       "line": "TXSemiRapid",
       "station": "流山おおたかの森",
       "time": 27,
-      "distance": 26.5
+      "distance": 26.5,
+      "fare": 629
     },
     {
       "line": "TXSemiRapid",
       "station": "柏の葉キャンパス",
       "time": 30,
-      "distance": 30
+      "distance": 30,
+      "fare": 682
     },
     {
       "line": "TXSemiRapid",
       "station": "守谷",
       "time": 35,
-      "distance": 37.7
+      "distance": 37.7,
+      "fare": 838
     },
     {
       "line": "TXSemiRapid",
       "station": "研究学園",
       "time": 46,
-      "distance": 55.6
+      "distance": 55.6,
+      "fare": 1152
     },
     {
       "line": "TXSemiRapid",
       "station": "つくば",
       "time": 49,
-      "distance": 58.3
+      "distance": 58.3,
+      "fare": 1205
     }
   ]
 }
