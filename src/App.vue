@@ -14,7 +14,6 @@
       </div>
     </main>
     <p class="has-text-grey-light">Copyright &copy; 2022 Haruki Kinoshita</p>
-    
     <div id="howto-modal" class="box" v-show="isShowModal">
       <p class="title is-4">図の見方</p>
       <p class="has-text-left is-size-7 mb-4">このコンテンツでは、ある駅まで電車が移動するのにかかる時間と距離を、<strong>時間軸</strong>(上の横線)と<strong>距離の軸</strong>(下の横線)を結ぶ線を使って表現しています。</p>
@@ -47,9 +46,16 @@ export default {
       mode: 'distance'
     }
   },
-  created() {
-    console.log("hello")
-    this.isShowModal = true
+  created: function() {
+    let modal_opened = this.$cookie.get('modal_opened')
+    if (modal_opened < 4) {
+      modal_opened++
+      this.$cookie.set('modal_opened', modal_opened, {expires: 7})
+      this.isShowModal = true
+    }
+    else {
+      this.isShowModal = false
+    }
   }
 }
 </script>
