@@ -79,7 +79,28 @@
               </text>
               <!-- 駅名 -->
               <text
+                v-if="item.distance !== 0"
                 :x="item.distance*scale + margin"
+                y="200"
+                font-size="10"
+                :fill="findColor(item.line)"
+                writing-mode="tb"
+              >
+                {{ item.station }}
+              </text>
+              <text
+                v-if="item.distance === 0 && item.line == selectedLine1.line"
+                :x="item.distance*scale - 6 + margin"
+                y="200"
+                font-size="10"
+                :fill="findColor(item.line)"
+                writing-mode="tb"
+              >
+                {{ item.station }}
+              </text>
+              <text
+                v-if="item.distance === 0 && item.line == selectedLine2.line"
+                :x="item.distance*scale + 6 + margin"
                 y="200"
                 font-size="10"
                 :fill="findColor(item.line)"
@@ -109,6 +130,7 @@ import SobuRapid from '../data/sobu_rapid.json'
 import TsukubaGo from '../data/tsukubago.json'
 import KeiyoCommuterRapid from '../data/keiyo_commuter_rapid.json'
 import OdakyuRapidExpress from '../data/odakyu_rapid_express.json'
+import MeitetsuNagoya from '../data/meitetsu_nagoya.json'
 
 export default {
   components: {
@@ -144,8 +166,9 @@ export default {
       .concat(SobuRapid.data.filter(el => el.time !== ''))
       .concat(KeiyoCommuterRapid.data.filter(el => el.time !== ''))
       .concat(OdakyuRapidExpress.data.filter(el => el.time !== ''))
-      .concat(KyotoShinkaisoku.data.filter(el => el.time !== ''))
       .concat(TokaidoSpecialRapid.data.filter(el => el.time !== ''))
+      .concat(MeitetsuNagoya.data.filter(el => el.time !== ''))
+      .concat(KyotoShinkaisoku.data.filter(el => el.time !== ''))
       .concat(TsukubaGo.data.filter(el => el.time !== ''))
     this.metaDataList = [
       TXRapid.metadata,
@@ -158,8 +181,9 @@ export default {
       SobuRapid.metadata,
       KeiyoCommuterRapid.metadata,
       OdakyuRapidExpress.metadata,
-      KyotoShinkaisoku.metadata,
       TokaidoSpecialRapid.metadata,
+      MeitetsuNagoya.metadata,
+      KyotoShinkaisoku.metadata,
       TsukubaGo.metadata,
     ],
     this.stationMax = Math.max(...this.metaDataList.map(el => el.stationSum))
