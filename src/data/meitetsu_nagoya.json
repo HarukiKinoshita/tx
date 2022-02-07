@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "line": "MeitetsuNagoya",
+    "displayName": "名鉄名古屋本線 快速特急",
+    "color": "#C00029",
+    "stationSum": 6
+  },
+  "data": [
+    {
+      "line": "MeitetsuNagoya",
+      "station": "名鉄名古屋",
+      "time": 0,
+      "distance": 0,
+      "fare": 0
+    },
+    {
+      "line": "MeitetsuNagoya",
+      "station": "金山",
+      "time": 3,
+      "distance": 3.6,
+      "fare": 190
+    },
+    {
+      "line": "MeitetsuNagoya",
+      "station": "神宮前",
+      "time": 6,
+      "distance": 5.8,
+      "fare": 230
+    },
+    {
+      "line": "MeitetsuNagoya",
+      "station": "知立",
+      "time": 20,
+      "distance": 24.9,
+      "fare": 510
+    },
+    {
+      "line": "MeitetsuNagoya",
+      "station": "東岡崎",
+      "time": 29,
+      "distance": 38.2,
+      "fare": 680
+    },
+    {
+      "line": "MeitetsuNagoya",
+      "station": "豊橋",
+      "time": 49,
+      "distance": 68,
+      "fare": 1140
+    }
+  ]
+}

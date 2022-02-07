@@ -10,25 +10,29 @@
       "line": "KeiyoCommuterRapid",
       "station": "東京",
       "time": 0,
-      "distance": 0
+      "distance": 0,
+      "fare": 0
     },
     {
       "line": "KeiyoCommuterRapid",
       "station": "八丁堀",
       "time": 2,
-      "distance": 1.2
+      "distance": 1.2,
+      "fare": 140
     },
     {
       "line": "KeiyoCommuterRapid",
       "station": "新木場",
       "time": 8,
-      "distance": 7.4
+      "distance": 7.4,
+      "fare": 170
     },
     {
       "line": "KeiyoCommuterRapid",
       "station": "蘇我",
       "time": 35,
-      "distance": 43
+      "distance": 43,
+      "fare": 770
     }
   ]
 }

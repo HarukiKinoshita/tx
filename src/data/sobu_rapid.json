@@ -10,73 +10,85 @@
       "line": "SobuRapid",
       "station": "東京",
       "time": 0,
-      "distance": 0
+      "distance": 0,
+      "fare": 0
     },
     {
       "line": "SobuRapid",
       "station": "新日本橋",
       "time": 2,
-      "distance": 1.2
+      "distance": 1.2,
+      "fare": 140
     },
     {
       "line": "SobuRapid",
       "station": "馬喰町",
       "time": 4,
-      "distance": 2.3
+      "distance": 2.3,
+      "fare": 140
     },
     {
       "line": "SobuRapid",
       "station": "錦糸町",
       "time": 8,
-      "distance": 4.8
+      "distance": 4.8,
+      "fare": 160
     },
     {
       "line": "SobuRapid",
       "station": "新小岩",
       "time": 13,
-      "distance": 10
+      "distance": 10,
+      "fare": 170
     },
     {
       "line": "SobuRapid",
       "station": "市川",
       "time": 19,
-      "distance": 12.8
+      "distance": 12.8,
+      "fare": 170
     },
     {
       "line": "SobuRapid",
       "station": "船橋",
       "time": 26,
-      "distance": 23.2
+      "distance": 23.2,
+      "fare": 390
     },
     {
       "line": "SobuRapid",
       "station": "津田沼",
       "time": 30,
-      "distance": 26.7
+      "distance": 26.7,
+      "fare": 470
     },
     {
       "line": "SobuRapid",
       "station": "稲毛",
       "time": 37,
-      "distance": 35.9
+      "distance": 35.9,
+      "fare": 640
     },
     {
       "line": "SobuRapid",
       "station": "千葉",
       "time": 41,
-      "distance": 39.2
+      "distance": 39.2,
+      "fare": 640
     },
     {
       "line": "SobuRapid",
       "station": "本千葉",
       "time": 44,
-      "distance": 40.6
+      "distance": 40.6,
+      "fare": 770
     },
     {
       "line": "SobuRapid",
       "station": "蘇我",
       "time": 47,
-      "distance": 43
+      "distance": 43,
+      "fare": 770
     }
   ]
 }

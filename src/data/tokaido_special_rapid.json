@@ -10,43 +10,50 @@
       "line": "TokaidoSpecialRapid",
       "station": "名古屋",
       "time": 0,
-      "distance": 0
+      "distance": 0,
+      "fare": 0
     },
     {
       "line": "TokaidoSpecialRapid",
       "station": "金山",
       "time": 4,
-      "distance": 3.3
+      "distance": 3.3,
+      "fare": 160
     },
     {
       "line": "TokaidoSpecialRapid",
       "station": "刈谷",
       "time": 20,
-      "distance": 24.4
+      "distance": 24.4,
+      "fare": 400
     },
     {
       "line": "TokaidoSpecialRapid",
       "station": "安城",
       "time": 26,
-      "distance": 30.4
+      "distance": 30.4,
+      "fare": 460
     },
     {
       "line": "TokaidoSpecialRapid",
       "station": "岡崎",
       "time": 31,
-      "distance": 40.1
+      "distance": 40.1,
+      "fare": 620
     },
     {
       "line": "TokaidoSpecialRapid",
       "station": "蒲郡",
       "time": 41,
-      "distance": 55.4
+      "distance": 55.4,
+      "fare": 970
     },
     {
       "line": "TokaidoSpecialRapid",
       "station": "豊橋",
       "time": 53,
-      "distance": 72.4
+      "distance": 72.4,
+      "fare": 1320
     }
   ]
 }
