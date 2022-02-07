@@ -24,7 +24,9 @@
 
     <div class="has-background-white mb-4">
       <h2 class="pt-5 pb-2">
-        <span class="pb-1 has-text-weight-bold" :style="`border-bottom: 3px solid ${selectedLine1.color}`">{{ selectedLine1.displayName }}</span> vs. <span class="pb-1 has-text-weight-bold" :style="`border-bottom: 3px solid ${selectedLine2.color}`">{{ selectedLine2.displayName }}</span>
+        <span class="pb-1 has-text-weight-bold" :style="`border-bottom: 3px solid ${selectedLine1.color}`">{{ selectedLine1.displayName }}</span>
+        <span v-if="selectedLine2 !== blankLine"> vs. </span>
+        <span v-if="selectedLine2 !== blankLine" class="pb-1 has-text-weight-bold" :style="`border-bottom: 3px solid ${selectedLine2.color}`">{{ selectedLine2.displayName }}</span>
       </h2>
       <div class="is-flex is-flex-wrap-nowrap" style="overflow-x: scroll;">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" style="min-width: 1024px; min-height: 320px;">
