@@ -33,9 +33,20 @@
           <!-- 軸 -->
           <line x1="0" :y1="lineOffset" x2="1200" :y2="lineOffset" stroke="lightgray" stroke-width="0.5"/>
           <line x1="0" :y1="200 - lineOffset" x2="1200" :y2="200 - lineOffset" stroke="lightgray" stroke-width="0.5" />
+          <text :x="1200 - margin" y="40" font-size="10">分</text>
+          <text :x="1200 - margin" y="170" font-size="10">円</text>
 
             <!-- 駅ごとのデータ -->
             <g v-for="(item, index) in timeDistanceData.filter(el => (selectedLine1.line.includes(el.line) || selectedLine2.line.includes(el.line)) && el.time !== '')" :key="index">
+              <!-- Path -->
+              <line
+                :x1="item.time*scale + margin"
+                :y1="lineOffset"
+                :x2="item.fare*scale/20 + margin"
+                :y2="200 - lineOffset"
+                :stroke="findColor(item.line)"
+                stroke-width="1"
+              />
               <!-- Time line -->
               <circle
                 :cx="item.time*scale + margin"
@@ -50,19 +61,10 @@
                 r="2"
                 fill="black"
               />
-              <!-- Path -->
-              <line
-                :x1="item.time*scale + margin"
-                :y1="lineOffset"
-                :x2="item.fare*scale/20 + margin"
-                :y2="200 - lineOffset"
-                :stroke="findColor(item.line)"
-                stroke-width="1"
-              />
               <!-- <polygon :points="`30,lineOffset `+(item.time*scale + margin)+`,lineOffset `+(item.fare*scale/20 + margin)+`, 200 - lineOffset 30, 200 - lineOffset`" fill="red" opacity="0.05" stroke="black" stroke-width="1" /> -->
               <!-- 所要時間 -->
               <text
-                :x="item.time*scale + margin"
+                :x="item.time*scale + margin - 5"
                 y="40"
                 font-size="10"
               >
