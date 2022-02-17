@@ -1,5 +1,6 @@
 <template>
   <div>
+    <!-- 路線選択 -->
     <div class="mb-5">
       <div class="select is-rounded mx-2 mb-1">
         <select
@@ -23,6 +24,7 @@
     </div>
 
     <div class="has-background-white mb-4">
+      <!-- 比較する路線の名称を表示 -->
       <h2 class="pt-5 pb-2">
         <span class="pb-1 has-text-weight-bold" :style="`border-bottom: 3px solid ${selectedLine1.color}`">{{ selectedLine1.displayName }}</span>
         <span v-if="selectedLine2 !== blankLine"> vs. </span>
@@ -134,6 +136,8 @@ import KeiyoCommuterRapid from '../data/keiyo_commuter_rapid.json'
 import OdakyuRapidExpress from '../data/odakyu_rapid_express.json'
 import MeitetsuNagoya from '../data/meitetsu_nagoya.json'
 
+import toImg from 'react-svg-to-image'
+
 export default {
   components: {
   },
@@ -188,8 +192,11 @@ export default {
       KyotoShinkaisoku.metadata,
       TsukubaGo.metadata,
     ],
+    // 1路線あたりの駅数の最大値
     this.stationMax = Math.max(...this.metaDataList.map(el => el.stationSum))
+    // チャートの右端の座標
     this.farthestPoint = Math.max(Math.max(...this.timeDistanceData.map(el => el.distance)), Math.max(...this.timeDistanceData.map(el => el.time)))
+    // 縮尺
     this.scale = (1200 - this.margin*2) / this.farthestPoint
     console.log("fartherst point", this.farthestPoint)
   },
@@ -197,17 +204,12 @@ export default {
     findColor(lineName) {
       return this.metaDataList.find(el => el.line == lineName)['color']
     },
-    getHeatMapColors(index) {
-      // console.log(index, `hsl(${(index-1)*320/20}, 75%, 50%`)
-      return `hsl(${(index-1)*360/this.stationMax}, 75%, 50%)`
-    },
     getPoints(current, before, index) {
       if (index == 0) {
         let tl = [30, 50]
         let tr = [current.time * 15 + this.margin, 50]
         let br = [current.distance * 15 + this.margin, 150]
         let bl = [30, 150]
-        // console.log(index, tl + ' ' + tr + ' ' + br + ' ' + bl)
         return (tl + ' ' + tr + ' ' + br + ' ' + bl)
       }
       else {
@@ -215,7 +217,6 @@ export default {
         let tr = [current.time * 15 + this.margin, 50]
         let br = [current.distance * 15 + this.margin, 150]
         let bl = [before.distance * 15 + this.margin, 150]
-        // console.log(index, tl + ' ' + tr + ' ' + br + ' ' + bl)
         return (tl + ' ' + tr + ' ' + br + ' ' + bl)
       }
     },

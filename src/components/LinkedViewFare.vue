@@ -197,28 +197,6 @@ export default {
     findColor(lineName) {
       return this.metaDataList.find(el => el.line == lineName)['color']
     },
-    getHeatMapColors(index) {
-      // console.log(index, `hsl(${(index-1)*320/20}, 75%, 50%`)
-      return `hsl(${(index-1)*360/this.stationMax}, 75%, 50%)`
-    },
-    getPoints(current, before, index) {
-      if (index == 0) {
-        let tl = [30, 50]
-        let tr = [current.time * 15 + this.margin, 50]
-        let br = [current.fare * 15 + this.margin, 150]
-        let bl = [30, 150]
-        // console.log(index, tl + ' ' + tr + ' ' + br + ' ' + bl)
-        return (tl + ' ' + tr + ' ' + br + ' ' + bl)
-      }
-      else {
-        let tl = [before.time * 15 + this.margin, 50]
-        let tr = [current.time * 15 + this.margin, 50]
-        let br = [current.fare * 15 + this.margin, 150]
-        let bl = [before.fare * 15 + this.margin, 150]
-        // console.log(index, tl + ' ' + tr + ' ' + br + ' ' + bl)
-        return (tl + ' ' + tr + ' ' + br + ' ' + bl)
-      }
-    },
   },
 }
 </script>
