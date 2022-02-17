@@ -136,8 +136,6 @@ import KeiyoCommuterRapid from '../data/keiyo_commuter_rapid.json'
 import OdakyuRapidExpress from '../data/odakyu_rapid_express.json'
 import MeitetsuNagoya from '../data/meitetsu_nagoya.json'
 
-import toImg from 'react-svg-to-image'
-
 export default {
   components: {
   },
