@@ -5,7 +5,7 @@ import VueGtag from "vue-gtag";
 
 Vue.use(VueCookie)
 Vue.use(VueGtag, {
-  config: { id: process.env.GA_ID }
+  config: { id: process.env.VUE_APP_GA_ID }
 })
 Vue.config.productionTip = false
 

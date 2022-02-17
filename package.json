@@ -14,7 +14,7 @@
     "gh-pages": "^3.2.3",
     "vue": "^2.6.11",
     "vue-cookie": "^1.1.4",
-    "vue-gtag": "^2.0.1"
+    "vue-gtag": "1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
